@@ -30,3 +30,8 @@ ENV LD_PRELOAD=/usr/src/rootfs_prefix/rootfs_prefix.so
 
 ENTRYPOINT ["/usr/sbin/collectd"]
 CMD ["-f"]
+
+LABEL org.opencontainers.image.source=https://github.com/slavik73/qnap-collectd
+LABEL org.opencontainers.image.description="collectd for qnap on amd64 - prometheys added"
+LABEL org.opencontainers.image.licenses=MIT
+
